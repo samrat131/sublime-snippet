@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[
+php artisan make:migration create__table --create=table
+php artisan make:migration add_fields_to__table --table=table_name
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>artisan</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

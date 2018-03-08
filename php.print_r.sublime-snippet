@@ -1,0 +1,17 @@
+<snippet>
+	<content><![CDATA[
+function pr(\$data='',\$die=0)
+{
+	echo '<pre>';
+	print_r(\$data);
+	echo '</pre>';
+	if (\$die) {
+		die();
+	}
+}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>my-pr</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.php</scope>
+</snippet>

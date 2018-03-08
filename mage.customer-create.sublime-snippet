@@ -1,0 +1,25 @@
+<snippet>
+	<content><![CDATA[
+\$websiteId = Mage::app()->getWebsite()->getId();
+\$store = Mage::app()->getStore();
+
+\$customer = Mage::getModel("customer/customer");
+\$customer->setWebsiteId(\$websiteId)
+        ->setStore(\$store)
+        ->setFirstname('John')
+        ->setLastname('Doe')
+        ->setEmail('jd1@ex.com')
+        ->setPassword('somepassword');
+
+try{
+    \$customer->save();
+}
+catch (Exception \$e) {
+    Zend_Debug::dump(\$e->getMessage());
+}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>mage-customer-create</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.php</scope>
+</snippet>

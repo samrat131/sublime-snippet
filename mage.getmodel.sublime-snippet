@@ -1,0 +1,20 @@
+<snippet>
+	<content><![CDATA[
+\$collection = Mage::getModel('module/model')
+			->getCollection()
+			//->addAttributeToSelect('*')
+			//->addFieldToFilter('price',array('from'=>'10','to'=>'20'))
+			//->addFieldToFilter(
+			//	array('last_cron_execute','last_cron_execute'),
+			//	array(array('lt'=>$compareDateTime),array('null' => 'null'))
+			//)
+			//->setPageSize(1)
+			//->addOrder('id','ASC')
+			//->getSelect()
+			->addFieldToFilter('sku','test');
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>mage-getmodel-collection</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.php</scope>
+</snippet>

@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+<button type="reset" class="btn-flat primary" onclick="document.location='';"><i class="fa fa-refresh"></i> Reset </button>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>bs-btn-reset</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.html</scope> -->
+</snippet>

@@ -1,0 +1,37 @@
+<snippet>
+	<content><![CDATA[
+//protected \$table = '';
+
+//protected \$fillable = [];
+
+//protected \$guarded = [];
+
+//protected \$hidden = ['created_at', 'updated_at'];
+
+/*
+public function getFirstNameAttribute(\$value)
+{
+    return ucfirst(\$value);
+}
+
+public function setFirstNameAttribute(\$value)
+{
+    \$this->attributes['first_name'] = strtolower(\$value);
+}
+
+public function user()
+{
+    return \$this->belongsTo('App\User', 'foreign_key', 'other_key');
+}
+
+public function comments()
+{
+	return \$this->hasMany('App\Comment', 'foreign_key', 'local_key');
+}
+*/
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>laravel-model-var</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.php</scope>
+</snippet>

@@ -1,0 +1,11 @@
+<snippet>
+	<content><![CDATA[
+if (\$_SERVER['REMOTE_ADDR'] == '210.4.67.125') {
+
+}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>myip</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.php</scope>
+</snippet>

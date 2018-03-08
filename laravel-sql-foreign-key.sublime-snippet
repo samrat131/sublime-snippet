@@ -1,0 +1,11 @@
+<snippet>
+	<content><![CDATA[
+\$table->foreign('${1:foreign_key}')
+      ->references('${2:primary_key}')->on('${3:table_name}')
+      ->onDelete('cascade');
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>sql-foreign</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.php</scope>
+</snippet>

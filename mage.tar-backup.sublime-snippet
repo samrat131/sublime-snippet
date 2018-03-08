@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+tar -czvf ${1:project}_1jan18.tgz app downloader errors includes js lib shell skin var mage .htaccess favicon.ico api.php cron.php get.php index.php install.php cron.sh scheduler_cron.sh
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>mage-tar-backup</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.php</scope>
+</snippet>

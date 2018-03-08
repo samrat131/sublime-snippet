@@ -1,0 +1,24 @@
+<snippet>
+	<content><![CDATA[
+<global>
+  ..
+  ..
+  <events>
+      <controller_action_layout_render_before>
+          <observers>
+              <cybernetikz_module_all_page>
+                  <class>Cybernetikz_Module_Model_Observer</class>
+                  <method>methodName</method>
+              </cybernetikz_module_all_page>
+          </observers>
+      </controller_action_layout_render_before>
+  </events>
+  ..
+  ..
+</global>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>mage-event-observer</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.xml</scope> -->
+</snippet>
