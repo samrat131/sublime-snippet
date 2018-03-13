@@ -1,0 +1,7 @@
+<snippet>
+	<content><![CDATA[
+@include('common.pagination', ['links'=> \$${1:items}->links(), 'route' => route('${2:view-name}')])
+]]></content>
+	<tabTrigger>lara-pagination</tabTrigger>
+	<!-- <scope>source.html</scope> -->
+</snippet>
