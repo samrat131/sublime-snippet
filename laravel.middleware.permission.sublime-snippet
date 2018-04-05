@@ -1,0 +1,7 @@
+<snippet>
+	<content><![CDATA[
+${1:->middleware('permission:${2:}')} ${3:'middleware' => 'permission:${4:others}'}
+]]></content>
+	<tabTrigger>lara-midp</tabTrigger>
+	<scope>source.php</scope>
+</snippet>
