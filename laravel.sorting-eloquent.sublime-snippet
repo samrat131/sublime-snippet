@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[
+\$columnToSort = [
+    '${1:id}' => '${2:ID}',
+];
+\$column = \$this->columnSorting->sortColumn(\$columnToSort);
+]]></content>
+	<tabTrigger>lara-sort</tabTrigger>
+	<scope>source.php</scope>
+</snippet>

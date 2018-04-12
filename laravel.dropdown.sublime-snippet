@@ -1,0 +1,17 @@
+<snippet>
+	<content><![CDATA[
+<div class="input-group long-input">
+	<span class="input-group-addon">
+		<label for="search_${1:id}">${1:id}</label>
+	</span>
+	<select name="${1:id}" id="search_${1:id}">
+    	<option value=""></option>
+    	@foreach(\$items as \$item)
+			<option {{ \$helper->setSelected(request('${1:this}'), \$item['id']) }} value="{{\$item['id']}}">{{\$item['id']}} : {{\$item['title']}}</option>
+		@endforeach
+	</select>
+</div>
+]]></content>
+	<tabTrigger>lara-dropdown</tabTrigger>
+	<!-- <scope>source.python</scope> -->
+</snippet>
