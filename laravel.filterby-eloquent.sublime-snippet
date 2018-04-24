@@ -1,0 +1,14 @@
+<snippet>
+	<content><![CDATA[
+public function filterBy(\$query)
+{
+    if (request()->has('${1:id}')) {
+        \$query->where('${1:id}', request('${1:id}'));
+    }${2}
+
+    return \$query;
+}
+]]></content>
+	<tabTrigger>lara-filter</tabTrigger>
+	<scope>source.php</scope>
+</snippet>

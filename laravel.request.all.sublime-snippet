@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[
-${1:\$request->all()} ${2://request()->all()}
+${1:request()${2:->all()}} ${3://\$request${4:->all()}}
 ]]></content>
 	<tabTrigger>req-all</tabTrigger>
 	<scope>source.php</scope>
