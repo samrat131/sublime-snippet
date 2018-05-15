@@ -1,0 +1,7 @@
+<snippet>
+	<content><![CDATA[
+<input type="hidden" name="_method" value="${1:PUT}">
+]]></content>
+	<tabTrigger>lara-method-input</tabTrigger>
+	<scope>text.blade</scope>
+</snippet>
