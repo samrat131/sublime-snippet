@@ -1,0 +1,74 @@
+<snippet>
+	<content><![CDATA[
+<!-- main container -->
+@extends('layouts.app')
+
+@section('title', '${1:Users}')
+@section('body_id', '${1:Users}-list')
+@section('body_class', '${1:Users}-list')
+
+@section('content')
+<div id="spinner"></div>
+@include('header')
+@include('sidebar')
+
+<!-- main container -->
+<div id="content" class="content">
+
+    <div id="sm-dev-username" class="retailer hidden-print">
+        <a role="button" data-pjax="true" href="#"> Hi, {{ Auth::user()->email }} </a>
+    </div>
+
+    <div id="pad-wrapper">
+
+        @include('common.status')
+
+        <div class="table-wrapper multi-store-tab">
+
+            <div class="head">
+                <h3>${1:Users}</h3>
+            </div>
+
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th> ID </th>
+                        <th><span class="line"></span> Title </th>
+                        <th><span class="line"></span> Created At </th>
+                        <th><span class="line"></span> &nbsp; </th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                @forelse(\$items as \$item)
+                <tr>
+                    <td>{{\$item->id}}</td>
+                    <td>{{\$item->title}}</td>
+                    <td>{{\$item->created_at}}</td>
+                </tr>
+                @empty
+                <tr>
+                    <td colspan="3"><p class="text-center">No items found</p></td>
+                </tr>
+                @endforelse
+                </tbody>
+
+            </table>
+        </div>
+
+        <script type="text/javascript">
+            \$(function() {
+              selectSideBarNav('${1:Users}');
+            });
+        </script>
+
+    </div>
+</div>
+<!-- end main container -->
+
+@include('footer')
+@endsection
+]]></content>
+	<tabTrigger>lara-list-items</tabTrigger>
+	<scope>text.blade</scope>
+</snippet>
