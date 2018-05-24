@@ -1,0 +1,14 @@
+<snippet>
+	<content><![CDATA[
+<div class="input-group long-input">
+	<span class="input-group-addon">
+		<label for="search_${1:name}">${1:name}</label>
+	</span>
+	<input type="text" name="${1:name}" id="search_${1:name}" value="" class="form-control">
+</div>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>lara-input-field</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>text.blade</scope>
+</snippet>
