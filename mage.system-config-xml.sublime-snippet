@@ -1,0 +1,87 @@
+<snippet>
+	<content><![CDATA[
+<!-- add following code to system.xml -->
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <tabs>
+        <gameimport translate="label" module="gameimport">
+            <label>Cybernetikz</label>
+            <sort_order>100</sort_order>
+        </gameimport>
+    </tabs>
+    <sections>
+        <gameimport translate="label" module="gameimport">
+            <label>Settings</label>
+            <tab>gameimport</tab>
+            <sort_order>1000</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+
+            <groups>
+                <gameimport_group translate="label" module="gameimport">
+                    <label>Gameimport Options</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>1000</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+
+                    <fields>
+                        <gameimport_input translate="label">
+                            <label>My Input Field: </label>
+                            <comment>My Comment</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </gameimport_input>
+                        <!-- <gameimport_select translate="label">
+                            <label>My Dropdown: </label>
+                            <comment>Source model provider Magento's default Yes/No values</comment>
+                            <frontend_type>select</frontend_type>
+                            <sort_order>90</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                        </gameimport_select> -->
+                    </fields>
+                </gameimport_group>
+            </groups>
+        </gameimport>
+    </sections>
+</config>
+
+<!-- add following code to config.xml inside congig tag -->
+<config>
+	<adminhtml>
+	    <acl>
+	        <resources>
+	            <all>
+	                <title>Allow Everything</title>
+	            </all>
+	            <admin>
+	                <children>
+	                    <system>
+	                        <children>
+	                            <config>
+	                                <children>
+	                                    <gameimport>
+	                                        <title>Inchoo - All</title>
+	                                    </gameimport>
+	                                </children>
+	                            </config>
+	                        </children>
+	                    </system>
+	                </children>
+	            </admin>
+	        </resources>
+	    </acl>
+	</adminhtml>
+</config>
+]]></content>
+	<tabTrigger>mage-system-config</tabTrigger>
+	<!-- <scope>source.xml</scope> -->
+</snippet>
