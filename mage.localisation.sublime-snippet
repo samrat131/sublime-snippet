@@ -1,0 +1,7 @@
+<snippet>
+	<content><![CDATA[
+<?php echo \$this->__('${1:string}') ?>
+]]></content>
+	<tabTrigger>mage-localisation</tabTrigger>
+	<!-- <scope>source.html</scope> -->
+</snippet>
