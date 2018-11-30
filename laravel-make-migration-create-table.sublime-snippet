@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[
-php artisan make:migration create_${1:table_name}_table --table=${1:table_name} ${2:--path=database/migrations/test/}
+php artisan make:migration create_${1:table_name}_table --create=${1:table_name} ${2:--path=database/migrations/test/}
 ]]></content>
 	<tabTrigger>migration:create</tabTrigger>
 </snippet>
