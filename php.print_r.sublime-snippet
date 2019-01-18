@@ -2,12 +2,8 @@
 	<content><![CDATA[
 function pr(\$data='',\$die=0)
 {
-	echo '<pre>';
-	print_r(\$data);
-	echo '</pre>';
-	if (\$die) {
-		die();
-	}
+	echo '<pre>'; print_r(\$data); echo '</pre>';
+	if (\$die) die();
 }
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
