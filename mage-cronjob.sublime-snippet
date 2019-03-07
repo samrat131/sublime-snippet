@@ -1,0 +1,18 @@
+<snippet>
+	<content><![CDATA[
+<crontab>
+    <jobs>
+        <${1:tag_name}>
+            <schedule>
+                <cron_expr>${2:* * * * *}</cron_expr>
+            </schedule>
+            <run>
+                <model>${3:module_name}/observer::${4:function_name}</model>
+            </run>
+        </${1:tag_name}>
+    </jobs>
+</crontab>
+]]></content>
+	<tabTrigger>mage-cronjob</tabTrigger>
+	<!-- <scope>source.xml</scope> -->
+</snippet>
