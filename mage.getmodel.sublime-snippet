@@ -12,6 +12,7 @@
 	//->getSelect()
 	//->columns('COUNT(*) AS total_view')
 	//->group('post_id')
+	//->order('total_view DESC');
 	->addFieldToFilter('sku','test');
 ]]></content>
 	<tabTrigger>mage-collection</tabTrigger>

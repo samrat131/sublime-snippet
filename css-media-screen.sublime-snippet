@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+@media screen and (${1:max}-width: ${2:767}px) {
+	${3:}
+}
+]]></content>
+	<tabTrigger>media-scr</tabTrigger>
+	<scope>source.css</scope>
+</snippet>
