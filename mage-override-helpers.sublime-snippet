@@ -1,0 +1,17 @@
+<snippet>
+	<content><![CDATA[
+<config>
+	<global>
+		<helpers>
+			<${1:module}>
+				<rewrite>
+					<data>${2:Namespace}_${1:module}_Helper_Data</data>
+				</rewrite>
+			</${1:module}>
+		</helpers>
+	</global>
+</config>
+]]></content>
+	<tabTrigger>mage-override-helpers</tabTrigger>
+	<!-- <scope>source.python</scope> -->
+</snippet>

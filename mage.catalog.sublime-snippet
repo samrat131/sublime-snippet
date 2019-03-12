@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[
-\$_product = Mage::getModel('${1:catalog}/${2:product}')->load(1);
+\$_model = Mage::getModel('${1:catalog}/${2:product}')->load(${3:Id});
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
 	<tabTrigger>mage-getmodel</tabTrigger>
