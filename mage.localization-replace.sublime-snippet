@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+>([^<>\n]+)<
+><?php echo $this->__('$1'); ?><
+]]></content>
+	<tabTrigger>mage-loc-replace</tabTrigger>
+	<!-- <scope>source.python</scope> -->
+</snippet>
