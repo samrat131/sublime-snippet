@@ -1,0 +1,13 @@
+<snippet>
+	<content><![CDATA[
+\$collection = Mage::getModel('${1:catalog}/${2:product}')
+    ->getCollection()
+    ->setPageSize(20)
+    ->setCurPage(1);
+
+\$collection = Mage::getModel('${1:catalog}/${2:product}')->getCollection();
+\$collection->getSelect()->limit(20);
+]]></content>
+	<tabTrigger>mage-collection2</tabTrigger>
+	<scope>source.php</scope>
+</snippet>
