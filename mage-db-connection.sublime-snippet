@@ -1,0 +1,20 @@
+<snippet>
+	<content><![CDATA[
+/* Magento – database connection */
+
+\$db = Mage::getSingleton('core/resource')->getConnection('core_write');
+
+\$db = Mage::getSingleton('core/resource')->getConnection('core_read');
+
+\$result = \$db->query("SELECT * FROM tablename");
+if (\$result)
+{
+	while (\$row = \$result->fetch(PDO::FETCH_ASSOC))
+	{
+	// Use \$row
+	}
+}
+]]></content>
+	<tabTrigger>mage-db-connection</tabTrigger>
+	<scope>source.php</scope>
+</snippet>

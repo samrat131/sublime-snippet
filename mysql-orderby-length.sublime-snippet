@@ -1,0 +1,7 @@
+<snippet>
+	<content><![CDATA[
+SELECT * FROM `${1:table}` WHERE 1 order by length(`${2:field}`) DESC
+]]></content>
+	<tabTrigger>mysql-orderby-length</tabTrigger>
+	<scope>source.sql</scope>
+</snippet>

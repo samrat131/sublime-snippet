@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[
+public function scope${1:column}(\$query)
+{
+    return \$query->where('${1:column}', '${2:value}');
+}
+]]></content>
+	<tabTrigger>lara-model-scope</tabTrigger>
+	<scope>source.php</scope>
+</snippet>

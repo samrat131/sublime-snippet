@@ -1,0 +1,11 @@
+<snippet>
+	<content><![CDATA[
+#dump single table
+mysqldump -u${1:username} -p ${2:db_name} ${3:table} > ${3:table}.sql
+
+#restore single table
+mysql -u${1:username} -p -D ${2:db_name} < ${3:table}.sql
+]]></content>
+	<tabTrigger>mysql-dump-table</tabTrigger>
+	<scope>source.sql</scope>
+</snippet>
