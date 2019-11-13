@@ -1,0 +1,7 @@
+<snippet>
+	<content><![CDATA[
+Mage::helper('core')->currency(${1:\$finalPrice}, true, false);
+]]></content>
+	<tabTrigger>mage-format-price</tabTrigger>
+	<scope>source.php</scope>
+</snippet>
