@@ -2,6 +2,18 @@
 	<content><![CDATA[
 \$collection = Mage::getModel('${1:catalog}/${2:product}')
     ->getCollection()
+    ->addAttributeToFilter('id', array('gt' => 5))
+    ->addAttributeToFilter('sku', array('neq' => 'test-product'))
+    ->addAttributeToFilter('sku', array('like' => 'UX%'))
+    ->addAttributeToFilter('sku', array('nlike' => 'err-prod%'))
+    ->addAttributeToFilter('id', array('in' => array(1,4,98)))
+    ->addAttributeToFilter('id', array('nin' => array(1,4,98)))
+    ->addAttributeToFilter('description', array('null' => true))
+    ->addAttributeToFilter('description', array('notnull' => true))
+    ->addAttributeToFilter('id', array('gt' => 5))
+    ->addAttributeToFilter('id', array('lt' => 5))
+    ->addAttributeToFilter('id', array('gteq' => 5))
+    ->addAttributeToFilter('id', array('lteq' => 5))
     ->setPageSize(20)
     ->setCurPage(1);
 
