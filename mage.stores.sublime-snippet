@@ -1,0 +1,14 @@
+<snippet>
+	<content><![CDATA[
+foreach (Mage::app()->getWebsites() as \$website) {
+    foreach (\$website->getGroups() as \$group) {
+        \$stores = \$group->getStores();
+        foreach (\$stores as \$store) {
+            ${1}
+        }
+    }
+}
+]]></content>
+	<tabTrigger>mage-stores</tabTrigger>
+	<scope>source.php</scope>
+</snippet>
