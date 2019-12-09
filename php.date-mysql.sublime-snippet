@@ -1,0 +1,7 @@
+<snippet>
+	<content><![CDATA[
+date('Y-m-d H:i:s');${1}
+]]></content>
+	<tabTrigger>date-mysql</tabTrigger>
+	<scope>source.php</scope>
+</snippet>
