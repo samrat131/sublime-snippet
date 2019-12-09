@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[
-date('Y-m-d H:i:s');${1}
+date('Y-m-d H:i:s'${1:, time()});
 ]]></content>
 	<tabTrigger>date-mysql</tabTrigger>
 	<scope>source.php</scope>
