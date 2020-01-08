@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+\$allGames = Cache::remember('all_games', Carbon::now()->addMinutes(1440), function() {
+    return ProductGbp::select('id', 'Name as title')->get()->toArray();
+});
+]]></content>
+	<tabTrigger>lara-chache</tabTrigger>
+	<scope>source.php</scope>
+</snippet>
