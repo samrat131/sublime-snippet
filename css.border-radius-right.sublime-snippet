@@ -1,0 +1,7 @@
+<snippet>
+	<content><![CDATA[
+border-radius:0 var(--${1:var}) var(--${1:var}) 0;
+]]></content>
+	<tabTrigger>border-radius-right</tabTrigger>
+	<scope>source.css</scope>
+</snippet>
