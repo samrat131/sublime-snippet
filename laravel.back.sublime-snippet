@@ -1,0 +1,7 @@
+<snippet>
+	<content><![CDATA[
+return back()->with('status', "${1:}");
+]]></content>
+	<tabTrigger>lara-back</tabTrigger>
+	<scope>source.php</scope>
+</snippet>
