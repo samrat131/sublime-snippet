@@ -69,6 +69,6 @@
 @include('footer')
 @endsection
 ]]></content>
-	<tabTrigger>lara-list-items</tabTrigger>
+	<tabTrigger>lara-template-list-items</tabTrigger>
 	<scope>text.blade</scope>
 </snippet>
