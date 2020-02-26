@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+<reference name="head">
+	<action method="setRobots"><value>NOINDEX,NOFOLLOW</value></action>
+</reference>
+]]></content>
+	<tabTrigger>mage-no-index-follow</tabTrigger>
+	<!-- <scope>source.python</scope> -->
+</snippet>
