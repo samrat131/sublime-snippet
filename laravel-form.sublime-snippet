@@ -1,0 +1,14 @@
+<snippet>
+	<content><![CDATA[
+<form method="POST" action="{{ route('${1:name}') }}" class="form-container">
+	{{ csrf_field() }}
+	${2:}
+	<div class="input-group filter-buttons">
+	    <button type="submit" class="btn-flat success"><i class="fa fa-search-plus"></i> Submit </button>
+	    <button type="reset" class="btn-flat primary" onclick="document.location=''"><i class="fa fa-refresh"></i> Reset </button>
+	</div>
+</form>
+]]></content>
+	<tabTrigger>lara-form</tabTrigger>
+	<scope>text.blade</scope>
+</snippet>
