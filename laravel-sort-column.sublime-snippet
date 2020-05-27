@@ -1,0 +1,15 @@
+<snippet>
+	<content><![CDATA[
+\$columnToSort = [
+    'FieldName'=>'Field Name',
+];
+
+\$column = \$this->sortColumn->sortColumn(\$columnToSort);
+
+if (\$request->has('sort') && \$request->has('order')) {
+    \$query = \$query->orderBy(\$request->sort, \$request->order);
+}
+]]></content>
+	<tabTrigger>lara-sort-col</tabTrigger>
+	<scope>source.php</scope>
+</snippet>
