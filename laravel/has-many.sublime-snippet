@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+return \$this->hasMany('App\Comment', '${1:foreign_key}', '${2:local_key}');
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>has-many-laravel</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.php</scope>
+</snippet>
