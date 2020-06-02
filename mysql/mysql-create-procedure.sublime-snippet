@@ -1,0 +1,18 @@
+<snippet>
+	<content><![CDATA[
+DELIMITER \$\$
+CREATE PROCEDURE `${1:Procedure_Name}` (IN `id` INT)
+BEGIN
+    DECLARE var INT DEFAULT 0;
+    
+    SELECT count(*)
+    INTO var
+    FROM `table_name` 
+    WHERE `FieldID`=id;
+
+END\$\$
+DELIMITER ;
+]]></content>
+	<tabTrigger>mysql-create-procedure</tabTrigger>
+	<scope>source.sql</scope>
+</snippet>
