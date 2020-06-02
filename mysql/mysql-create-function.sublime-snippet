@@ -1,0 +1,17 @@
+<snippet>
+	<content><![CDATA[
+DELIMITER \$\$
+CREATE FUNCTION `func_name`(`var1` VARCHAR(255), `var2` TINYINT(1)) RETURNS int(11)
+    READS SQL DATA
+BEGIN
+
+RETURN (
+    SELECT sum(Qty) FROM `table` WHERE 1
+);
+    
+END\$\$
+DELIMITER ;
+]]></content>
+	<tabTrigger>mysql-create-function</tabTrigger>
+	<scope>source.sql</scope>
+</snippet>
