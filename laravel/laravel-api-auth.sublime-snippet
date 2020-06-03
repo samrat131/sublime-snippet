@@ -1,0 +1,19 @@
+<snippet>
+	<content><![CDATA[
+\$output = [];
+
+\$output = \$this->_authenticate(\$request, __FUNCTION__);
+// if error found, stop and return error
+if ( \$this->_isErrorOutput(\$output) ) {
+    return \$output;
+}
+
+\$result = ${1:Model::all()};
+
+\$output['Response']['Value'] = \$result;
+
+return \$output;
+]]></content>
+	<tabTrigger>lara-api</tabTrigger>
+	<scope>source.php</scope>
+</snippet>
