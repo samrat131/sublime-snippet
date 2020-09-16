@@ -1,8 +1,8 @@
 <snippet>
 	<content><![CDATA[
-if (\$_SERVER['REMOTE_ADDR'] == '210.4.67.125') {
-	print_r(\$${1:var});
-	${2:die();}
+if (\$_SERVER['${1:REMOTE_ADDR}${2:HTTP_X_FORWARDED_FOR}'] == '103.60.175.${3:52}') {
+	print_r(\$${4:var});
+	${5:die();}
 }
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->

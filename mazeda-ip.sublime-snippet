@@ -1,0 +1,7 @@
+<snippet>
+	<content><![CDATA[
+103.60.175.${1:52}
+]]></content>
+	<tabTrigger>myip</tabTrigger>
+	<!-- <scope>source.python</scope> -->
+</snippet>

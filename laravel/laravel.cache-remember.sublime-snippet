@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+Cache::remember('${1:key}', Carbon::now()->addMinutes(${2:1440}), function() {
+    return ${3:value};
+});
+]]></content>
+	<tabTrigger>lara-cache-remember</tabTrigger>
+	<scope>source.php</scope>
+</snippet>

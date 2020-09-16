@@ -1,0 +1,25 @@
+<snippet>
+	<content><![CDATA[
+/**
+ * api/2.0/${1:method}?password=abc123&
+ * @return json
+ */
+public function ${1:method}(Request \$request)
+{
+    \$output = \$this->_authenticate(\$request, __FUNCTION__);
+    
+    if (\$this->_isErrorOutput(\$output)) {
+        return \$output;
+    }
+
+    return \$this->${2:method2}(\$request->all());
+}
+
+public function ${2:method2}(array \$params)
+{
+    return \$this->_makeZtormApiCall(\$this->getStoreID(\$params), __FUNCTION__, \$params);
+}
+]]></content>
+	<tabTrigger>lara-cms-api-func</tabTrigger>
+	<scope>source.php</scope>
+</snippet>
