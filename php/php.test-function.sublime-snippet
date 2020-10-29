@@ -1,0 +1,12 @@
+<snippet>
+	<content><![CDATA[
+/** @test */
+public function is_${1:test}()
+{
+    \$this->${2:assertTrue(true)};
+    ${3}
+}
+]]></content>
+	<tabTrigger>tfun</tabTrigger>
+	<scope>source.php</scope>
+</snippet>
