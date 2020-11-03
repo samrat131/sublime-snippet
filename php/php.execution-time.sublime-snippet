@@ -1,0 +1,15 @@
+<snippet>
+	<content><![CDATA[
+\$time_start = microtime(true);
+
+// Execute your logic here.
+
+\$time_end = microtime(true);
+
+\$time = \$time_end - \$time_start;
+
+// echo '<pre> Execution time : '.\$time.' seconds . </pre>';
+]]></content>
+	<tabTrigger>exe-time</tabTrigger>
+	<scope>source.php</scope>
+</snippet>
