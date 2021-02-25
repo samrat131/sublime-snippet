@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+\$this->validate(\$request, [
+	'${1:title}' => '${2:required}',
+]);
+]]></content>
+	<tabTrigger>lara-validate</tabTrigger>
+	<scope>source.php</scope>
+</snippet>

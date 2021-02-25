@@ -1,0 +1,26 @@
+<snippet>
+	<content><![CDATA[
+public function store(Request \$request)
+{
+	\$this->validate(\$request, [
+		'${1:field1}' => 'required',
+		'${2:field2}' => 'required',
+	]);
+
+	\$${3:model} = ${3:model}::create(
+		request()->only([
+			'${1:field1}',
+			'${2:field2}'
+		])
+	);
+
+	if (\$${3:model}) {
+		session()->flash('status', 'Created');
+	}
+
+	return back();
+}
+]]></content>
+	<tabTrigger>lara-store-method</tabTrigger>
+	<scope>source.php</scope>
+</snippet>
