@@ -1,0 +1,7 @@
+<snippet>
+	<content><![CDATA[
+['${1:item1}','${2:item2}','${3:item3}','${4:item4}','${5:item5}'];
+]]></content>
+	<tabTrigger>my-arr</tabTrigger>
+	<scope>source.php</scope>
+</snippet>

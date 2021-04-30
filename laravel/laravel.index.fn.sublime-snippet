@@ -1,0 +1,13 @@
+<snippet>
+	<content><![CDATA[
+public function index()
+{
+	//\$${2:items} = ${3:Model}::all();
+	\$${2:items} = collect([]);
+
+	return view('${1:index}', compact('${2:items}'));
+}
+]]></content>
+	<tabTrigger>lara-index-fn</tabTrigger>
+	<scope>source.php</scope>
+</snippet>

@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+@if(\$_SERVER['REMOTE_ADDR'] == '103.60.175.${1:15}')
+	${2}
+@endif
+]]></content>
+	<tabTrigger>lara-if-blade</tabTrigger>
+	<!-- <scope>source.python</scope> -->
+</snippet>
