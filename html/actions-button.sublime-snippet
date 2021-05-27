@@ -1,0 +1,13 @@
+<snippet>
+	<content><![CDATA[
+<ul class="actions ${1:one}-action">
+	<li>
+		<a class="show" href="${2:#}" title="${3:details}">
+			<i class="fa fa-${4:folder}"></i>
+		</a>
+	</li>
+</ul>
+]]></content>
+	<tabTrigger>lara-actions-btn</tabTrigger>
+	<!-- <scope>source.html</scope> -->
+</snippet>
