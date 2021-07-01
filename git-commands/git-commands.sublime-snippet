@@ -1,0 +1,11 @@
+<snippet>
+	<content><![CDATA[
+#To stop tracking a file you need to remove it from the index. This can be achieved with this command.
+git rm --cached <file>
+
+#If you want to remove a whole folder, you need to remove all files in it recursively.
+git rm -r --cached <folder>
+]]></content>
+	<tabTrigger>git-commands</tabTrigger>
+	<scope>source.git</scope>
+</snippet>
